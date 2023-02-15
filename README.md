@@ -2,16 +2,16 @@
 
 This POC showing the process of Sign in with Google and how to read the token and user claims.
 
-1. First check the appsettings.json file. You will see 
+  1. First check the appsettings.json file. You will see 
 
-//I got these information by creating web appication on Google.
+    //I got these information by creating web appication on Google.
 
-"Authentication": {
-    "Google": {
-      "ClientId": "907678086353-9ml4s2h21nck8e3o5p184c2jck3dnrfe.apps.googleusercontent.com",
-      "ClientSecret": "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"
-    }
-} 
+    "Authentication": {
+        "Google": {
+          "ClientId": "907678086353-9ml4s2h21nck8e3o5p184c2jck3dnrfe.apps.googleusercontent.com",
+          "ClientSecret": "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"
+        }
+    } 
  
  2. Check the Startup file. Under the ConfigurationService method you will be able to see Cookies and Google configs, 
  
