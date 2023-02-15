@@ -76,7 +76,7 @@ This POC showing the process of Sign in with Google and how to read the token an
     
 3. Check the HomeController, there you will be able to see
  
-     public async Task Login()
+        public async Task Login()
         {
             // this code is another way to get the information, we can talk about it later
             //await HttpContext.ChallengeAsync(GoogleDefaults.AuthenticationScheme, new AuthenticationProperties()
@@ -91,8 +91,8 @@ This POC showing the process of Sign in with Google and how to read the token an
             });
         }
 
-    // This method also another way to read user info, we can talk about later
-    public async Task<IActionResult> GoogleResponse()
+        // This method also another way to read user info, we can talk about later
+        public async Task<IActionResult> GoogleResponse()
         {
             var result = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
@@ -118,7 +118,7 @@ This POC showing the process of Sign in with Google and how to read the token an
  Notes: 
  At the Startup class under the ConfigureService method you will see
  
- //services.AddAuthentication(option =>
+            //services.AddAuthentication(option =>
             //{
             //    option.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
             //    option.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
