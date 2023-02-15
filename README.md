@@ -15,7 +15,7 @@ This POC showing the process of Sign in with Google and how to read the token an
  
  2. Check the Startup file. Under the ConfigurationService method you will be able to see Cookies and Google configs, 
  
- services.AddAuthentication(option =>
+            services.AddAuthentication(option =>
             {
                 option.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                 option.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
