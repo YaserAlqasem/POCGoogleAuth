@@ -50,7 +50,7 @@ This POC showing the process of Sign in with Google and how to read the token an
  
  I used this method to get user info
  
- private async Task<User> VerifyGoogleToken(string idToken)
+        private async Task<User> VerifyGoogleToken(string idToken)
         {
             using var httpClient = new HttpClient();
             // this google api help us to get the user info using the token.
